@@ -1,0 +1,24 @@
+{
+  "0": {
+    "namber": 0,
+    "title": "West Shore",
+    "map": "west_shore_map.svg",
+    "positionMap": "right",
+    "bg": "west_shore_bg.jpeg"
+    
+  },
+  "1": {
+    "namber": 1,
+    "title": "East Shore",
+    "map": "east_shore_map.svg",
+    "positionMap": "left",
+    "bg": "east_shore_bg.jpeg"
+  },
+  "2": {
+    "namber": 2,
+    "title": "Hawaii Shore",
+    "map": "hawaii_shore_map.svg",
+    "positionMap": "right",
+    "bg": "hawai_shore_bg.jpeg"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "United Airlines": {
+    "name": "United Airlines",
+    "logo": "United_Airlines.png",
+    "imgPlane": "United_Airlines_plan.png"
+  },
+  "American Airlines": {
+    "name": "American Airlines",
+    "logo": "American_Airlines.png",
+    "imgPlane": "American_Airlines_plane.png"
+  },
+  "Hawaiian Airlines": {
+    "name": "Hawaiian Airlines",
+    "logo": "Hawaiian_Airlines.png",
+    "imgPlane": "Hawaiian_Airlines_plane.png"
+  },
+  "Spirit Airlines": {
+    "name": "Spirit Airlines",
+    "logo": "Spirit_Airlines.png",
+    "imgPlane": "Spirit_Airlines_plane.png"
+  },
+  "Delta": {
+    "name": "Delta",
+    "logo": "Delta.png",
+    "imgPlane": "Delta_plane.png"
+  },
+  "JetBlue": {
+    "name": "JetBlue",
+    "logo": "JetBlue.png",
+    "imgPlane": "JetBlue_plane.webp"
+  },
+  "LATAM": {
+    "name": "LATAM",
+    "logo": "LTM_SN.svg",
+    "imgPlane": "LTM_SN_plane.webp"
+  },
+  "Copa Airlines": {
+    "name": "Copa Airlines",
+    "logo": "Copa_Airlines.png",
+    "imgPlane": "Copa_Airlines_plan.png"
+  },
+  "Air France": {
+    "name": "Air France",
+    "logo": "air_france.png",
+    "imgPlane": "air_france_plane.png"
+  },
+  "China Eastern Airlines": {
+    "name": "China Eastern Airlines",
+    "logo": "China_Eastern_Airlines.png",
+    "imgPlane": "China_Eastern_Airlines_plane.png"
+  },
+  "Turkish Airlines": {
+    "name": "Turkish Airlines",
+    "logo": "Turkish_Airlines.png",
+    "imgPlane": "Turkish_Airlines_plane.png"
+  },
+  "Qatar Airways": {
+    "name": "Qatar Airways",
+    "logo": "Qatar_Airways.png",
+    "imgPlane": "qatar_plane.png"
+  },
+  "Philippine Airlines": {
+    "name": "Philippine Airlines",
+    "logo": "Philippine_Airlines.png",
+    "imgPlane": "Philippine_Airlines_plane.png"
+  },
+  "Air New Zealand": {
+    "name": "Air New Zealand",
+    "logo": "Air_New_Zealand.png",
+    "imgPlane": "Air_New_Zealand_plane.png"
+  },
+  "Qantas": {
+    "name": "Qantas",
+    "logo": "Qantas.png",
+    "imgPlane": "QANTAS_plane.png"
+  }
+}

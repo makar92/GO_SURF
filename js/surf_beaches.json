@@ -1,0 +1,562 @@
+{
+  "0": {
+    "name": "Honolulu",
+    "country": "USA",
+    "state": "Hawaii",
+    "distance": 2484,
+    "coordinat": "21.275643, -157.831059",
+    "surfInfo": {
+      "surf": "5 - 10",
+      "tide": "+2.9",
+      "wind": "6 W"
+    },
+    "imgBgCard": "Honolulu_card.jpg",
+    "imgBgTravel": "Honolulu_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "United Airlines",
+        "travelTime": {
+          "hours": 5,
+          "minutes": 50
+        },
+        "pricing": "$224 USD"
+      },
+      "1": {
+        "nameAirline": "American Airlines",
+        "travelTime": {
+          "hours": 5,
+          "minutes": 53
+        },
+        "pricing": "$264 USD"
+      },
+      "2": {
+        "nameAirline": "Hawaiian Airlines",
+        "travelTime": {
+          "hours": 5,
+          "minutes": 50
+        },
+        "pricing": "$264 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Moana Surfrider, A Westin Resort",
+        "imgBgResort": "Moana_Surfrider.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$390 USD",
+          "1": "$459 USD",
+          "2": "$632 USD",
+          "3": "$758 USD"
+        }
+      },
+      "1": {
+        "name": "Sheraton Waikiki",
+        "imgBgResort": "Sheraton_Waikiki.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$650 USD",
+          "1": "$790 USD",
+          "2": "$850 USD",
+          "3": "$1200 USD"
+        }
+      },
+      "2": {
+        "name": "Lotus Honolulu at Diamond Head",
+        "imgBgResort": "Lotus_Honolulu.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$465 USD",
+          "1": "$507 USD",
+          "2": "$780 USD",
+          "3": "$820 USD"
+        }
+      }
+    }
+  },
+  "1": {
+    "name": "Malibu Beach",
+    "country": "USA",
+    "state": "California",
+    "distance": 0,
+    "coordinat": "34.024634, -118.717067",
+    "surfInfo": {
+      "surf": "5 - 9",
+      "tide": "+2.1",
+      "wind": "5 NW"
+    },
+    "imgBgCard": "Malibu_Beach_card.jpg",
+    "imgBgTravel": "Malibu_Beach_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "",
+        "travelTime": {
+          "hours": 0,
+          "minutes": 0
+        },
+        "pricing": ""
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Malibu Country Inn",
+        "imgBgResort": "Malibu_Country_Inn.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$150 USD",
+          "1": "$192 USD",
+          "2": "$295 USD",
+          "3": "$340 USD"
+        }
+      },
+      "1": {
+        "name": "The M Malibu",
+        "imgBgResort": "The_M_Malibu.png",
+        "rating": 2,
+        "pricePerNight": {
+          "0": "$195 USD",
+          "1": "$221 USD",
+          "2": "$234 USD",
+          "3": "$267 USD"
+        }
+      },
+      "2": {
+        "name": "The Surfrider Hotel",
+        "imgBgResort": "The_Surfrider_Hotel.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$456 USD",
+          "1": "$502 USD",
+          "2": "$528 USD",
+          "3": "$559 USD"
+        }
+      }
+    }
+  },
+  "2": {
+    "name": "Miami Beach",
+    "country": "USA",
+    "state": "florida",
+    "distance": 2732,
+    "coordinat": "25.820789, -80.114664",
+    "surfInfo": {
+      "surf": "4 - 7",
+      "tide": "+1.5",
+      "wind": "3 S"
+    },
+    "imgBgCard": "Miami_Beach_card.jpg",
+    "imgBgTravel": "Miami_Beach_bg.webp",
+    "airline": {
+      "0": {
+        "nameAirline": "Spirit Airlines",
+        "travelTime": {
+          "hours": 4,
+          "minutes": 55
+        },
+        "pricing": "$118 USD"
+      },
+      "1": {
+        "nameAirline": "Delta",
+        "travelTime": {
+          "hours": 5,
+          "minutes": 1
+        },
+        "pricing": "$163 USD"
+      },
+      "2": {
+        "nameAirline": "JetBlue",
+        "travelTime": {
+          "hours": 4,
+          "minutes": 53
+        },
+        "pricing": "$163 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Hilton Cabana Miami Beach Resort",
+        "imgBgResort": "Hilton_Cabana_Miami_Beach_Resort.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$146 USD",
+          "1": "$187 USD",
+          "2": "$257 USD",
+          "3": "$385 USD"
+        }
+      },
+      "1": {
+        "name": "Faena Hotel Miami Beach",
+        "imgBgResort": "Faena_Hotel_Miami_Beach.png",
+        "rating": 5,
+        "pricePerNight": {
+          "0": "$958 USD",
+          "1": "$1005 USD",
+          "2": "$1005 USD",
+          "3": "$1568 USD"
+        }
+      },
+      "2": {
+        "name": "Hampton Inn Jacksonville Beach/Oceanfront",
+        "imgBgResort": "Hampton_Inn_Jacksonville_Beach_Oceanfront.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$154 USD",
+          "1": "$176 USD",
+          "2": "$235 USD",
+          "3": "$235 USD"
+        }
+      }
+    }
+  },
+  "3": {
+    "name": "Florianópolis",
+    "country": "Brazil",
+    "state": "Santa Catarina",
+    "distance": 6232,
+    "coordinat": "-27.655374, -48.465312",
+    "surfInfo": {
+      "surf": "10 - 16",
+      "tide": "+3.8",
+      "wind": "10 SW"
+    },
+    "imgBgCard": "Florianópolis_card.jpg",
+    "imgBgTravel": "Florianópolis_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "LATAM",
+        "travelTime": {
+          "hours": 17,
+          "minutes": 30
+        },
+        "pricing": "$769 USD"
+      },
+      "1": {
+        "nameAirline": "Copa Airlines",
+        "travelTime": {
+          "hours": 26,
+          "minutes": 0
+        },
+        "pricing": "$1097 USD"
+      },
+      "2": {
+        "nameAirline": "Delta",
+        "travelTime": {
+          "hours": 17,
+          "minutes": 30
+        },
+        "pricing": "$1099 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Morro das Pedras Clube",
+        "imgBgResort": "Morro_das_Pedras_Clube.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$85 USD",
+          "1": "$92 USD",
+          "2": "$117 USD",
+          "3": "$258 USD"
+        }
+      },
+      "1": {
+        "name": "Joaquina Beach",
+        "imgBgResort": "Joaquina_Beach.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$25 USD",
+          "1": "$37 USD",
+          "2": "$48 USD",
+          "3": "$78 USD"
+        }
+      },
+      "2": {
+        "name": "Hibisco Guest House",
+        "imgBgResort": "Hibisco_Guest_House.png",
+        "rating": 0,
+        "pricePerNight": {
+          "0": "$65 USD",
+          "1": "$82 USD",
+          "2": "$107 USD",
+          "3": "$115 USD"
+        }
+      }
+    }
+  },
+  "4": {
+    "name": "Biarritz",
+    "country": "France",
+    "state": "Nouvelle-Aquitaine",
+    "distance": 5757,
+    "coordinat": "43.479395, -1.571945",
+    "surfInfo": {
+      "surf": "5 - 19",
+      "tide": "+1.8",
+      "wind": "3 NE"
+    },
+    "imgBgCard": "Biarritz_card.jpg",
+    "imgBgTravel": "Biarritz_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "Delta",
+        "travelTime": {
+          "hours": 12,
+          "minutes": 45
+        },
+        "pricing": "$640 USD"
+      },
+      "1": {
+        "nameAirline": "Air France",
+        "travelTime": {
+          "hours": 13,
+          "minutes": 40
+        },
+        "pricing": "$655 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Hôtel Le Garage Biarritz",
+        "imgBgResort": "Hôtel_Le_Garage_Biarritz.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$121 USD",
+          "1": "$147 USD",
+          "2": "$178 USD",
+          "3": "$264 USD"
+        }
+      },
+      "1": {
+        "name": "Hôtel Edouard VII",
+        "imgBgResort": "Hôtel_Edouard_VII.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$87 USD",
+          "1": "$103 USD",
+          "2": "$169 USD",
+          "3": "$205 USD"
+        }
+      },
+      "2": {
+        "name": "Hôtel Windsor Biarritz",
+        "imgBgResort": "Hôtel_Windsor_Biarritz.png",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$107 USD",
+          "1": "$132 USD",
+          "2": "$189 USD",
+          "3": "$207 USD"
+        }
+      }
+    }
+  },
+  "5": {
+    "name": "Velivani Beach",
+    "country": "Maldives",
+    "state": "Male",
+    "distance": 9680,
+    "coordinat": "9.814047, 126.164852",
+    "surfInfo": {
+      "surf": "7 - 10",
+      "tide": "+2.2",
+      "wind": "7 NW"
+    },
+    "imgBgCard": "The_Jailbreaks_Surf_Point_card.jpg",
+    "imgBgTravel": "The_Jailbreaks_Surf_Point_bg.webp",
+    "airline": {
+      "0": {
+        "nameAirline": "China Eastern Airlines",
+        "travelTime": {
+          "hours": 41,
+          "minutes": 0
+        },
+        "pricing": "$931 USD"
+      },
+      "1": {
+        "nameAirline": "Turkish Airlines",
+        "travelTime": {
+          "hours": 24,
+          "minutes": 0
+        },
+        "pricing": "$1287 USD"
+      },
+      "2": {
+        "nameAirline": "Qatar Airways",
+        "travelTime": {
+          "hours": 35,
+          "minutes": 0
+        },
+        "pricing": "$1334 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Bito's Guest House",
+        "imgBgResort": "Bito's_Guest_House.png",
+        "rating": 0,
+        "pricePerNight": {
+          "0": "$58 USD",
+          "1": "$71 USD",
+          "2": "$96 USD",
+          "3": "$157 USD"
+        }
+      },
+      "1": {
+        "name": "Jail Break Surf Inn",
+        "imgBgResort": "Jail_Break_Surf_Inn.png",
+        "rating": 0,
+        "pricePerNight": {
+          "0": "$54 USD",
+          "1": "$62 USD",
+          "2": "$89 USD",
+          "3": "$99 USD"
+        }
+      },
+      "2": {
+        "name": "Moodhu Guesthouse",
+        "imgBgResort": "Moodhu_Guesthouse.png",
+        "rating": 0,
+        "pricePerNight": {
+          "0": "$61 USD",
+          "1": "$61 USD",
+          "2": "$89 USD",
+          "3": "$89 USD"
+        }
+      }
+    }
+  },
+  "6": {
+    "name": "Cloud Nine",
+    "country": "Philippines",
+    "state": "Siargao",
+    "distance": 7248,
+    "coordinat": "9.814047, 126.164852",
+    "surfInfo": {
+      "surf": "5 - 11",
+      "tide": "+2.5",
+      "wind": "5 SW"
+    },
+    "imgBgCard": "Cloud_Nine_card.jpg",
+    "imgBgTravel": "Cloud_Nine_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "Philippine Airlines",
+        "travelTime": {
+          "hours": 37,
+          "minutes": 0
+        },
+        "pricing": "$1449 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Point 303",
+        "imgBgResort": "Point_303.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$32 USD",
+          "1": "$36 USD",
+          "2": "$58 USD",
+          "3": "$65 USD"
+        }
+      },
+      "1": {
+        "name": "Kawili resort",
+        "imgBgResort": "Kawili_resort.png",
+        "rating": 0,
+        "pricePerNight": {
+          "0": "$37 USD",
+          "1": "$41 USD",
+          "2": "$65 USD",
+          "3": "$89 USD"
+        }
+      },
+      "2": {
+        "name": "Ocean 101",
+        "imgBgResort": "Ocean_101.png",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$82 USD",
+          "1": "$82 USD",
+          "2": "$124 USD",
+          "3": "$124 USD"
+        }
+      }
+    }
+  },
+  "7": {
+    "name": "Airlie Beach",
+    "country": "Australia",
+    "state": "Queensland",
+    "distance": 7065,
+    "coordinat": "-20.262328, 148.714900",
+    "surfInfo": {
+      "surf": "9 - 13",
+      "tide": "+2.3",
+      "wind": "4 SE"
+    },
+    "imgBgCard": "airlie_beach_card.jpg",
+    "imgBgTravel": "airlie_beach_bg.jpg",
+    "airline": {
+      "0": {
+        "nameAirline": "Air New Zealand",
+        "travelTime": {
+          "hours": 24,
+          "minutes": 0
+        },
+        "pricing": "$2008 USD"
+      },
+      "1": {
+        "nameAirline": "Qantas",
+        "travelTime": {
+          "hours": 20,
+          "minutes": 15
+        },
+        "pricing": "$2383 USD"
+      },
+      "2": {
+        "nameAirline": "United Airlines",
+        "travelTime": {
+          "hours": 21,
+          "minutes": 5
+        },
+        "pricing": "$3073 USD"
+      }
+    },
+    "resorts": {
+      "0": {
+        "name": "Coral Sea",
+        "imgBgResort": "coral_sea.webp",
+        "rating": 4,
+        "pricePerNight": {
+          "0": "$147 USD",
+          "1": "$169 USD",
+          "2": "$213 USD",
+          "3": "$228 USD"
+        }
+      },
+      "1": {
+        "name": "Sunlit Waters",
+        "imgBgResort": "Sunlit_Waters.jpg",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$95 USD",
+          "1": "$115 USD",
+          "2": "$187 USD",
+          "3": "$198 USD"
+        }
+      },
+      "2": {
+        "name": "Colonial Palms",
+        "imgBgResort": "Colonial_Palms.jpg",
+        "rating": 3,
+        "pricePerNight": {
+          "0": "$87 USD",
+          "1": "$117 USD",
+          "2": "$189 USD",
+          "3": "$245 USD"
+        }
+      }
+    }
+  }
+}

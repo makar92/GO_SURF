@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1001 496" style="enable-background:new 0 0 1001 496;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#4AF6CD;}
+	.st2{fill:#FFFFFF;fill-opacity:0;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#4AF6CD;}
+	.st4{display:none;fill:#FFFFFF;enable-background:new    ;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:21px;}
+	.db {display: block;}
+</style>
+<g id="map">
+	<path class="st0" d="M1018.2,459.7c-17.6,9.4-52.5,7.2-72.3,10.1c-22.9,3.3-44.2,10.3-66.5,14.6c-24,4.6-48.6-0.1-72.9,2.6
+		c-11.7,1.3-27,9.7-38.6,7.6c-17.7-3.2-7.3-3.9-18.2-14.7c-17.1-16.9-15.9-28.2-24.2-51.2c-5.3-14.7-14.7-36.1-24-47.6
+		c-8.2-10.1-41.6-40.5-53.2-43.2c-10-2.2-24.7,13.3-35,6.8c-12.3-7.8,1.4-25.7-6.8-35.4c-6.9-8.1-22-2.1-31.2-4.7
+		c-9.7-2.7-17.6-10.2-27.8-12.8c-13.8-3.6-22,2.8-33.1-7.4c-5.4-4.9-3.6-19.2-12.5-24.9c-20.4-13.1-43.5,3.6-61.4-20.5
+		c-18,3.6-45.7,11.7-62.9,4.9c0.4-34.8-6.2-66.4-7.8-101.2c-30.7,1.6-18.9-11.5-29.3-28.9C331.1,98.2,311,98,299.1,86.1
+		c-6.9-7-4.7-17.1-10.5-24.8c-7-9.3-14.6-11-21.6-18.2c-12-12.5-26-33.3-34.3-49.7c-11.4-22.7,780.8-2.8,780.8-2.8l-5.4,172.8
+		C1014.6,187.2,1037.2,449.5,1018.2,459.7z"/>
+	<path class="st0" d="M1008.1,163.4c0.2,4,0.4,8,0.1,11.9"/>
+</g>
+<path id="bigloc4" class="st1" d="M725,474.5c3.6,0,6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5s-6.5,2.9-6.5,6.5S721.4,474.5,725,474.5z"/>
+<path id="bigloc3" class="st1" d="M661,366.5c3.6,0,6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5s-6.5,2.9-6.5,6.5S657.4,366.5,661,366.5z"/>
+<path id="bigloc2" class="st1 db" d="M575.5,326c3.6,0,6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5s-6.5,2.9-6.5,6.5S571.9,326,575.5,326z"/>
+<path id="bigloc1" class="st1" d="M365,231.5c3.6,0,6.5-2.9,6.5-6.5s-2.9-6.5-6.5-6.5s-6.5,2.9-6.5,6.5S361.4,231.5,365,231.5z"/>
+<g id="loc4_1_">
+	<circle id="l4" class="st2" cx="725" cy="468" r="11.9"/>
+	<path id="lc4" class="st3" d="M725,471c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S723.3,471,725,471z"/>
+</g>
+<g id="loc3_1_">
+	<circle id="l3" class="st2" cx="661" cy="360" r="11.9"/>
+	<path id="lc3" class="st3" d="M661,363c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S659.3,363,661,363z"/>
+</g>
+<g id="loc2_1_">
+	<circle id="l2" class="st2" cx="575.5" cy="319.5" r="11.9"/>
+	<path id="lc2" class="st3" d="M575.5,322.5c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3C572.5,321.1,573.8,322.5,575.5,322.5z"/>
+</g>
+<g id="loc1_1_">
+	<circle id="l1_2_" class="st2" cx="365" cy="225" r="11.9"/>
+	<path id="lc1" class="st3" d="M365,228c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S363.3,228,365,228z"/>
+</g>
+<text id="name4" transform="matrix(1 0 0 1 430.6599 474.5007)" class="st4 st5 st6">West Shore | San Diego, CA</text>
+<text id="name3" transform="matrix(1 0 0 1 365.0002 382.9109)" class="st4 st5 st6">West Shore | Los Angeles, CA</text>
+<text id="name2" transform="matrix(1 0 0 1 320.355 326.9109)" class="st4 st5 st6 db">West Shore | Malibu, CA</text>
+<text id="name1" transform="matrix(1 0 0 1 70.6755 231.5007)" class="st4 st5 st6">West Shore | Surf Beach, CA</text>
+</svg>

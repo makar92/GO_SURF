@@ -1,0 +1,21 @@
+//Анимация ховера и эктива
+
+& * {
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  &:hover {
+    & * {
+      transition: all 0.3s ease 0s;
+      color: #61a496;
+      fill: #61a496;
+    }
+  }
+}
+&:active {
+  & * {
+    color: #4AF6CD;
+    fill: #4AF6CD;
+    transition: all 0s ease 0s;
+  }
+}

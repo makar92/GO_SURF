@@ -1,0 +1,78 @@
+{
+  "0": {
+    "name": "ANKER CITY WAVE",
+    "img": "ANKER_CITY_WAVE.png",
+    "brand": "ANKER",
+    "rating": 4,
+    "price": 405,
+    "material": "X-Density EPS",
+    "strengthening": "wooden core",
+    "fins": "Set for 3 fins",
+    "size": [
+      "5'7\" x 20 1/2\" x 2 2/3\" 36л"
+    ]
+  },
+  "1": {
+    "name": "ANKER SURF ROLLER",
+    "img": "ANKER_SURF_ROLLER.png",
+    "brand": "ANKER",
+    "rating": 4,
+    "price": 339,
+    "material": "X-Density EPS",
+    "strengthening": "wooden core",
+    "fins": "Set for 3 fins",
+    "size": [
+      "7'0\" 22\" 2.75\" 49.5л",
+      "8'0\" 22.6\" 2.9\" 61.4л",
+      "9'0\" 23.2\" 2.9\" 92.6л"
+    ]
+  },
+  "2": {
+    "name": "Weird Waves Dylan Graves Futures",
+    "img": "Weird_Waves_Dylan_Graves_Futures.png",
+    "brand": "HAYDENSHAPES",
+    "rating": 4,
+    "price": 723,
+    "material": "Herringbone EPS",
+    "strengthening": "glass fiber reinforcement",
+    "fins": "Set for 3 fins",
+    "size": [
+      "5’4’’ х 20’’ x 2 1/2’’ (29 л)",
+      "5’8’’ x 20 1/2’’ x 2 5/8’’ (33 л)",
+      "6’0’’ x 21’’ x 2 3/4’’ (38 л)"
+    ]
+  },
+  "3": {
+    "name": "Loot Series Glider Futures",
+    "img": "Loot Series Glider Futures.png",
+    "brand": "HAYDENSHAPES",
+    "rating": 3,
+    "price": 518,
+    "material": "bamboo",
+    "strengthening": "glass fiber reinforcement",
+    "fins": "Set for 3 fins",
+    "size": [
+      "8'0\" x 23\" x 3 3/4\" - 80L",
+      "9'0 x 23\" x 3 3/4\" - 85L"
+    ]
+  },
+  "4": {
+    "name": "Holy Grail FutureFlex FCSII 5 FIN",
+    "img": "Holy_Grail_FutureFlex_FCSII_5_FIN.png",
+    "brand": "HAYDENSHAPES",
+    "rating": 5,
+    "price": 957,
+    "material": "Herringbone EPS",
+    "strengthening": "Carbon strengthening",
+    "fins": "5 Fin System FCS II",
+    "size": [
+      "5'8\" x 19 7/8\" x 2 7/16\" - 28.19L",
+      "5'9\" x 20\" x 2 1/2\" - 29.51L",
+      "5'10\" 20 1/8\" Х 2 9/16\" - 31.11L",
+      "5'11\" 20 1/4\" Х 2 5/8\" - 32.2L",
+      "6'0\" 20 3/8\" Х 2 11/16\" - 33.8L",
+      "6'1\" 20 1/2\" Х 2 3/4\" - 34.9L",
+      "6'3\" 20 3/4\" Х 2 3/4\" - 36.46L"
+    ]
+  }
+}
