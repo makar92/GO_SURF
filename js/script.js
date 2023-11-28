@@ -127,22 +127,22 @@ setTimeout(() => {
     }, 500)
   }
 
-  let svg1 = document.querySelector('.mapMB').contentWindow.document;
+  //let svg1 = document.querySelector('.mapMB').contentWindow.document;
   let svg2 = document.querySelector('.mapSurf').contentWindow.document;
 
-  svg1.addEventListener('wheel', scrolMainSlider1);
+  //svg1.addEventListener('wheel', scrolMainSlider1);
   svg2.addEventListener('wheel', scrolMainSlider2);
 
  
 
   //создаем масcив всех svg
-  let svges = [svg1, svg2]
+  //let svges = [svg1, svg2]
 
   //Для листания свайпом
-  svges.forEach(element => {
-    element.addEventListener('touchstart', handleTouchStart, false);  
-    element.addEventListener('touchmove', handleTouchMove, false);
-  });
+  // svges.forEach(element => {
+  //   element.addEventListener('touchstart', handleTouchStart, false);  
+  //   element.addEventListener('touchmove', handleTouchMove, false);
+  // });
 
   var xDown = null;                                                        
   var yDown = null;                                                        
@@ -192,19 +192,19 @@ function newChose(n) {
   // Подгрузка данных для main-block:
   btsShores[n].classList.add('item-main-block_shosen');
   titleMainBlock.innerHTML = shores[n].title;
-  mapMainBlock.innerHTML = `<object class="mapMB" type="image/svg+xml" data="img/main-block/maps/${shores[n].map}"></object>`;
+  //mapMainBlock.innerHTML = `<object class="mapMB" type="image/svg+xml" data="img/main-block/maps/${shores[n].map}"></object>`;
   bgMainBlock.innerHTML = `<img src="img/main-block/bg/${shores[n].bg}" alt="">`
 
   // Позиционирование карты:
-  let map = document.getElementsByClassName('main-block__map')[0];
-  let posMap = shores[n].positionMap;
-  map.classList.remove("left");
-  map.classList.remove("right");
-  addClass(map, posMap);
+  // let map = document.getElementsByClassName('main-block__map')[0];
+  // let posMap = shores[n].positionMap;
+  // map.classList.remove("left");
+  // map.classList.remove("right");
+  // addClass(map, posMap);
 
-  setTimeout(function() {
-    showLoc();
-  }, 200);
+  // setTimeout(function() {
+  //   showLoc();
+  // }, 200);
 }
 
 setTimeout(function() {
@@ -253,82 +253,82 @@ arrowDounRight.addEventListener('click', function() {
 
 
 //----- main-block map ------------------------------------
-let nCheckLoc = 2;
-let arrLoc;
-let arrName;
-let arrBigLoc;
+// let nCheckLoc = 2;
+// let arrLoc;
+// let arrName;
+// let arrBigLoc;
 
-function showLoc() {
+// function showLoc() {
 
-  let svg = document.querySelector('.mapMB').contentWindow.document;
+//   let svg = document.querySelector('.mapMB').contentWindow.document;
 
-  arrLoc = [
-    svg.querySelector('#loc1_1_'),
-    svg.querySelector('#loc2_1_'),
-    svg.querySelector('#loc3_1_'),
-    svg.querySelector('#loc4_1_'),
-  ]
-  arrName = [
-    svg.querySelector('#name1'),
-    svg.querySelector('#name2'),
-    svg.querySelector('#name3'),
-    svg.querySelector('#name4'),
-  ]
-  arrBigLoc = [
-    svg.querySelector('#bigloc1'),
-    svg.querySelector('#bigloc2'),
-    svg.querySelector('#bigloc3'),
-    svg.querySelector('#bigloc4'),
-  ]
+//   arrLoc = [
+//     svg.querySelector('#loc1_1_'),
+//     svg.querySelector('#loc2_1_'),
+//     svg.querySelector('#loc3_1_'),
+//     svg.querySelector('#loc4_1_'),
+//   ]
+//   arrName = [
+//     svg.querySelector('#name1'),
+//     svg.querySelector('#name2'),
+//     svg.querySelector('#name3'),
+//     svg.querySelector('#name4'),
+//   ]
+//   arrBigLoc = [
+//     svg.querySelector('#bigloc1'),
+//     svg.querySelector('#bigloc2'),
+//     svg.querySelector('#bigloc3'),
+//     svg.querySelector('#bigloc4'),
+//   ]
 
-  for (let i = 0; i < arrLoc.length; i++) {
-    arrLoc[i].addEventListener('click', function() {
-      removeClass(arrName, "db");
-      removeClass(arrBigLoc, "db");
-      arrName[i].classList.add('db');
-      arrBigLoc[i].classList.add('db');
-    })
-  }
-}
+//   for (let i = 0; i < arrLoc.length; i++) {
+//     arrLoc[i].addEventListener('click', function() {
+//       removeClass(arrName, "db");
+//       removeClass(arrBigLoc, "db");
+//       arrName[i].classList.add('db');
+//       arrBigLoc[i].classList.add('db');
+//     })
+//   }
+// }
 
-setTimeout(function() {
-showLoc();
-}, 10);
+// setTimeout(function() {
+// showLoc();
+// }, 10);
 
-let arrowUpLeft = document.querySelector('#arrow-up-left');
-let arrowUpRight = document.querySelector('#arrow-up-right');
+// let arrowUpLeft = document.querySelector('#arrow-up-left');
+// let arrowUpRight = document.querySelector('#arrow-up-right');
 
-arrowUpLeft.addEventListener('click', function() {
+// arrowUpLeft.addEventListener('click', function() {
 
-  let chosen = containsClass(arrName, "db");
-  removeClass(arrName, "db");
-  removeClass(arrBigLoc, "db");
+//   let chosen = containsClass(arrName, "db");
+//   removeClass(arrName, "db");
+//   removeClass(arrBigLoc, "db");
 
-  if (chosen == 0) {
-    chosen = btsShores.length;
-  } else {
-    chosen = chosen - 1;
-  }
+//   if (chosen == 0) {
+//     chosen = btsShores.length;
+//   } else {
+//     chosen = chosen - 1;
+//   }
 
-  addClass(arrName[chosen], "db");
-  addClass(arrBigLoc[chosen], "db");
-})
+//   addClass(arrName[chosen], "db");
+//   addClass(arrBigLoc[chosen], "db");
+// })
 
-arrowUpRight.addEventListener('click', function() {
+// arrowUpRight.addEventListener('click', function() {
 
-  let chosen = containsClass(arrName, "db");
-  removeClass(arrName, "db");
-  removeClass(arrBigLoc, "db");
+//   let chosen = containsClass(arrName, "db");
+//   removeClass(arrName, "db");
+//   removeClass(arrBigLoc, "db");
 
-  if (chosen == btsShores.length) {
-    chosen = 0;
-  } else {
-    chosen = chosen + 1;
-  }
+//   if (chosen == btsShores.length) {
+//     chosen = 0;
+//   } else {
+//     chosen = chosen + 1;
+//   }
 
-  addClass(arrName[chosen], "db");
-  addClass(arrBigLoc[chosen], "db");
-})
+//   addClass(arrName[chosen], "db");
+//   addClass(arrBigLoc[chosen], "db");
+// })
 
 
 
