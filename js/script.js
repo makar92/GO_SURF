@@ -128,10 +128,10 @@ setTimeout(() => {
   }
 
   //let svg1 = document.querySelector('.mapMB').contentWindow.document;
-  let svg2 = document.querySelector('.mapSurf').contentWindow.document;
+  //let svg2 = document.querySelector('.mapSurf').contentWindow.document;
 
   //svg1.addEventListener('wheel', scrolMainSlider1);
-  svg2.addEventListener('wheel', scrolMainSlider2);
+  //svg2.addEventListener('wheel', scrolMainSlider2);
 
  
 
@@ -334,125 +334,125 @@ arrowDounRight.addEventListener('click', function() {
 
 //---- surf map -----------------------------------------
 
-let mapSufData = document.querySelector('.surf__map');
-let mapSurf;
-let arrDot;
-let arrDotHover;
-let arrDotActive;
-let arrMobWindow;
-let arrCoordinats;
-let coordinats = document.querySelector('.surf__coordinats');
+// let mapSufData = document.querySelector('.surf__map');
+// let mapSurf;
+// let arrDot;
+// let arrDotHover;
+// let arrDotActive;
+// let arrMobWindow;
+// let arrCoordinats;
+// let coordinats = document.querySelector('.surf__coordinats');
 
-//медиазапрос изменения карты
-changeMap();
-matchMedia('(max-width: 767px)').addListener(function() {
-  changeMap();
-  setTimeout(function() {
-    updateSurfMap();
-  }, 200);
-});
+// //медиазапрос изменения карты
+// changeMap();
+// matchMedia('(max-width: 767px)').addListener(function() {
+//   changeMap();
+//   setTimeout(function() {
+//     updateSurfMap();
+//   }, 200);
+// });
 
-//Функция изменения карты
-function changeMap() {
-  if (window.matchMedia('(min-width: 767px)').matches) {
-    mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDots.svg"></object>';
-  } else {
-    mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDotsmobile.svg"></object>';
-  }
-}
+// //Функция изменения карты
+// function changeMap() {
+//   if (window.matchMedia('(min-width: 767px)').matches) {
+//     mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDots.svg"></object>';
+//   } else {
+//     mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDotsmobile.svg"></object>';
+//   }
+// }
 
-function updateSurfMap() {
-  mapSurf = document.querySelector('.mapSurf').contentWindow.document;
+// function updateSurfMap() {
+//   mapSurf = document.querySelector('.mapSurf').contentWindow.document;
 
-  arrDot = [
-    mapSurf.querySelector('#oval0'),
-    mapSurf.querySelector('#oval1'),
-    mapSurf.querySelector('#oval2'),
-    mapSurf.querySelector('#oval3'),
-    mapSurf.querySelector('#oval4'),
-    mapSurf.querySelector('#oval5'),
-    mapSurf.querySelector('#oval6'),
-    mapSurf.querySelector('#oval7'),
-  ]
+//   arrDot = [
+//     mapSurf.querySelector('#oval0'),
+//     mapSurf.querySelector('#oval1'),
+//     mapSurf.querySelector('#oval2'),
+//     mapSurf.querySelector('#oval3'),
+//     mapSurf.querySelector('#oval4'),
+//     mapSurf.querySelector('#oval5'),
+//     mapSurf.querySelector('#oval6'),
+//     mapSurf.querySelector('#oval7'),
+//   ]
 
-  arrDotHover = [
-    mapSurf.querySelector('#ovalHover0'),
-    mapSurf.querySelector('#ovalHover1'),
-    mapSurf.querySelector('#ovalHover2'),
-    mapSurf.querySelector('#ovalHover3'),
-    mapSurf.querySelector('#ovalHover4'),
-    mapSurf.querySelector('#ovalHover5'),
-    mapSurf.querySelector('#ovalHover6'),
-    mapSurf.querySelector('#ovalHover7'),
-  ]
+//   arrDotHover = [
+//     mapSurf.querySelector('#ovalHover0'),
+//     mapSurf.querySelector('#ovalHover1'),
+//     mapSurf.querySelector('#ovalHover2'),
+//     mapSurf.querySelector('#ovalHover3'),
+//     mapSurf.querySelector('#ovalHover4'),
+//     mapSurf.querySelector('#ovalHover5'),
+//     mapSurf.querySelector('#ovalHover6'),
+//     mapSurf.querySelector('#ovalHover7'),
+//   ]
   
-  arrDotActive = [
-    mapSurf.querySelector('#ovalActiv0'),
-    mapSurf.querySelector('#ovalActiv1'),
-    mapSurf.querySelector('#ovalActiv2'),
-    mapSurf.querySelector('#ovalActiv3'),
-    mapSurf.querySelector('#ovalActiv4'),
-    mapSurf.querySelector('#ovalActiv5'),
-    mapSurf.querySelector('#ovalActiv6'),
-    mapSurf.querySelector('#ovalActiv7'),
-  ]
+//   arrDotActive = [
+//     mapSurf.querySelector('#ovalActiv0'),
+//     mapSurf.querySelector('#ovalActiv1'),
+//     mapSurf.querySelector('#ovalActiv2'),
+//     mapSurf.querySelector('#ovalActiv3'),
+//     mapSurf.querySelector('#ovalActiv4'),
+//     mapSurf.querySelector('#ovalActiv5'),
+//     mapSurf.querySelector('#ovalActiv6'),
+//     mapSurf.querySelector('#ovalActiv7'),
+//   ]
   
-  arrMobWindow = [
-    mapSurf.querySelector('#window0'),
-    mapSurf.querySelector('#window1'),
-    mapSurf.querySelector('#window2'),
-    mapSurf.querySelector('#window3'),
-    mapSurf.querySelector('#window4'),
-    mapSurf.querySelector('#window5'),
-    mapSurf.querySelector('#window6'),
-    mapSurf.querySelector('#window7'),
-  ]
+//   arrMobWindow = [
+//     mapSurf.querySelector('#window0'),
+//     mapSurf.querySelector('#window1'),
+//     mapSurf.querySelector('#window2'),
+//     mapSurf.querySelector('#window3'),
+//     mapSurf.querySelector('#window4'),
+//     mapSurf.querySelector('#window5'),
+//     mapSurf.querySelector('#window6'),
+//     mapSurf.querySelector('#window7'),
+//   ]
 
-  arrCoordinats = [
-    beaches[0].coordinat,
-    beaches[1].coordinat,
-    beaches[2].coordinat,
-    beaches[3].coordinat,
-    beaches[4].coordinat,
-    beaches[5].coordinat,
-    beaches[6].coordinat,
-    beaches[7].coordinat,
-  ]
+//   arrCoordinats = [
+//     beaches[0].coordinat,
+//     beaches[1].coordinat,
+//     beaches[2].coordinat,
+//     beaches[3].coordinat,
+//     beaches[4].coordinat,
+//     beaches[5].coordinat,
+//     beaches[6].coordinat,
+//     beaches[7].coordinat,
+//   ]
   
-  //hover for dots
-  for (let i = 0; i < arrDot.length; i++) {
-    arrDot[i].addEventListener('mouseenter', function() {
-      arrDotHover[i].classList.add('db');
-    })
-  }
-  for (let i = 0; i < arrDot.length; i++) {
-    arrDot[i].addEventListener('mouseleave', function() {
-      arrDotHover[i].classList.remove('db');
-    })
-  }
+//   //hover for dots
+//   for (let i = 0; i < arrDot.length; i++) {
+//     arrDot[i].addEventListener('mouseenter', function() {
+//       arrDotHover[i].classList.add('db');
+//     })
+//   }
+//   for (let i = 0; i < arrDot.length; i++) {
+//     arrDot[i].addEventListener('mouseleave', function() {
+//       arrDotHover[i].classList.remove('db');
+//     })
+//   }
 
-  //active for dos
-  for (let i = 0; i < arrDot.length; i++) {
-    arrDot[i].addEventListener('click', function() {
-      removeClass(arrDotActive, 'db');
-      removeClass(arrMobWindow, 'db');
-      arrDotActive[i].classList.add('db');
-      arrMobWindow[i].classList.add('db');
-      coordinats.innerHTML = arrCoordinats[i];
-    })
-  }
+//   //active for dos
+//   for (let i = 0; i < arrDot.length; i++) {
+//     arrDot[i].addEventListener('click', function() {
+//       removeClass(arrDotActive, 'db');
+//       removeClass(arrMobWindow, 'db');
+//       arrDotActive[i].classList.add('db');
+//       arrMobWindow[i].classList.add('db');
+//       coordinats.innerHTML = arrCoordinats[i];
+//     })
+//   }
 
-  //reset active window
-  mapSurf.querySelector('#reset_1_').addEventListener('click', function() {
-    removeClass(arrDotActive, 'db');
-    removeClass(arrMobWindow, 'db');
-    coordinats.innerHTML = "";
-  })
-}
+//   //reset active window
+//   mapSurf.querySelector('#reset_1_').addEventListener('click', function() {
+//     removeClass(arrDotActive, 'db');
+//     removeClass(arrMobWindow, 'db');
+//     coordinats.innerHTML = "";
+//   })
+// }
   
-setTimeout(function() {
-  updateSurfMap();
-}, 200);
+// setTimeout(function() {
+//   updateSurfMap();
+// }, 200);
 
 
 
@@ -991,33 +991,33 @@ btShopToMain.addEventListener('click', function() {
 })
 
 //Кнопки карты
-let arrBTS;
+// let arrBTS;
 
-function addLisenerForBTofMWofMap() {
-  mapSurf = document.querySelector('.mapSurf').contentWindow.document;
+// function addLisenerForBTofMWofMap() {
+//   mapSurf = document.querySelector('.mapSurf').contentWindow.document;
 
-  arrBTS = [
-    mapSurf.querySelector('#arow_1_'),
-    mapSurf.querySelector('#arow_12_'),
-    mapSurf.querySelector('#arow_2_'),
-    mapSurf.querySelector('#arow_4_'),
-    mapSurf.querySelector('#arow_9_'),
-    mapSurf.querySelector('#arow_6_'),
-    mapSurf.querySelector('#arow_5_'),
-    mapSurf.querySelector('#arow_3_'),
-  ]
+//   arrBTS = [
+//     mapSurf.querySelector('#arow_1_'),
+//     mapSurf.querySelector('#arow_12_'),
+//     mapSurf.querySelector('#arow_2_'),
+//     mapSurf.querySelector('#arow_4_'),
+//     mapSurf.querySelector('#arow_9_'),
+//     mapSurf.querySelector('#arow_6_'),
+//     mapSurf.querySelector('#arow_5_'),
+//     mapSurf.querySelector('#arow_3_'),
+//   ]
 
-  for (let i = 0; i < Object.keys(arrBTS).length; i++) {
-    arrBTS[i].addEventListener('click', function() {
-      changeInfoTravel(i)
-      mainSwiper.slideTo(3, 600);
-    })
-  }
-}
+//   for (let i = 0; i < Object.keys(arrBTS).length; i++) {
+//     arrBTS[i].addEventListener('click', function() {
+//       changeInfoTravel(i)
+//       mainSwiper.slideTo(3, 600);
+//     })
+//   }
+// }
   
-setTimeout(function() {
-  addLisenerForBTofMWofMap();
-}, 300);
+// setTimeout(function() {
+//   addLisenerForBTofMWofMap();
+// }, 300);
 
 
 

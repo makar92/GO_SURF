@@ -847,14 +847,9 @@ body a {
   top: -10%;
   right: 0;
 }
-.surf__map {
+.surf__map-block {
   width: 100%;
   height: 100%;
-}
-.surf__map object {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 .surf__coordinats {
   writing-mode: vertical-rl;
@@ -895,6 +890,46 @@ body a {
   height: 100%;
   object-fit: contain;
   overflow: hidden;
+}
+
+.surf-map-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.surf-map-block__image-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .surf-map-block__image-desktop {
+    display: none;
+  }
+}
+.surf-map-block__image-desktop img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.surf-map-block__image-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .surf-map-block__image-mobile {
+    display: none;
+  }
+}
+.surf-map-block__image-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .slider {
