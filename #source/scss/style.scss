@@ -486,8 +486,13 @@ body{
     padding: 20px 30px 80px 30px;
   }
   &__arrows-up {
-    display: none;
+    //display: none;
     justify-content: end;
+    position: relative;
+    z-index: 10000;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &__top-text {
     flex: 1 1 auto;
@@ -650,8 +655,161 @@ body{
   justify-content: flex-end;
 }
 
+
+
 .map-block {
-  
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  &__map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    // &:nth-child(1) {
+    //   //display: none;
+    //   & svg {
+    //     right: 0;
+    //     width: 1400px;
+    //     height: 700px;
+    //     @media (max-width: 1648px) or (max-height: 1192px) {
+    //       width: 1000px;
+    //       height: 500px;
+    //     }
+    //     @media (max-width: 1240px) or (max-height: 995px) {
+    //       width: 800px;
+    //       height: 400px;
+    //     }
+    //     @media (max-width: 1028px) or (max-height: 853px) {
+    //       width: 580px;
+    //       height: 290px;
+    //     }
+    //   }
+    // }
+    // &:nth-child(2) {
+    //   display: none;
+    //   & svg {
+    //     left: 0;
+    //     width: 1800px;
+    //     height: 900px;
+    //     @media (max-width: 1648px) or (max-height: 1192px) {
+    //       width: 1600px;
+    //       height: 800px;
+    //     }
+    //     @media (max-width: 1240px) or (max-height: 995px) {
+    //       width: 1400px;
+    //       height: 700px;
+    //     }
+    //     @media (max-width: 1028px) or (max-height: 853px) {
+    //       width: 1000px;
+    //       height: 500px;
+    //     }
+    //   }
+    // }
+    // &:nth-child(3) {
+    //   display: none;
+    //   & svg {
+    //     top: 5%;
+    //     right: -8%;
+    //     width: 1650px;
+    //     height: 550px;
+    //     @media (max-width: 1648px) or (max-height: 1192px) {
+    //       width: 1350px;
+    //       height: 450px;
+    //     }
+    //     @media (max-width: 1310px) or (max-height: 995px) {
+    //       width: 1200px;
+    //       height: 400px;
+    //     }
+    //     @media (max-width: 1187px) or (max-height: 995px) {
+    //       width: 1200px;
+    //       height: 400px;
+    //     }
+    //     @media (max-width: 1187px) {
+    //       width: 750px;
+    //       height: 250px;
+    //       right: -5%;
+    //     }
+    //   }
+    // }
+    & svg {
+      position: absolute;
+      top: 0;
+
+    }
+  }
+
+}
+
+
+
+.map0 {
+  & svg {
+    right: 0;
+    width: 1400px;
+    height: 700px;
+    @media (max-width: 1648px) or (max-height: 1192px) {
+      width: 1000px;
+      height: 500px;
+    }
+    @media (max-width: 1240px) or (max-height: 995px) {
+      width: 800px;
+      height: 400px;
+    }
+    @media (max-width: 1028px) or (max-height: 853px) {
+      width: 580px;
+      height: 290px;
+    }
+  }
+}
+.map1 {
+  & svg {
+    left: 0;
+    width: 1800px;
+    height: 900px;
+    @media (max-width: 1648px) or (max-height: 1192px) {
+      width: 1600px;
+      height: 800px;
+    }
+    @media (max-width: 1240px) or (max-height: 995px) {
+      width: 1400px;
+      height: 700px;
+    }
+    @media (max-width: 1028px) or (max-height: 853px) {
+      width: 1000px;
+      height: 500px;
+    }
+  }
+}
+.map2 {
+  & svg {
+    top: 5%;
+    right: -8%;
+    width: 1650px;
+    height: 550px;
+    @media (max-width: 1648px) or (max-height: 1192px) {
+      width: 1350px;
+      height: 450px;
+    }
+    @media (max-width: 1310px) or (max-height: 995px) {
+      width: 1200px;
+      height: 400px;
+    }
+    @media (max-width: 1187px) or (max-height: 995px) {
+      width: 1200px;
+      height: 400px;
+    }
+    @media (max-width: 1187px) {
+      width: 750px;
+      height: 250px;
+      right: -5%;
+    }
+  }
 }
 
 

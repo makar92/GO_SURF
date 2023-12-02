@@ -3,9 +3,10 @@ import beaches from "./surf_beaches.json" assert {type: 'json'};
 import airlines from "./airlines.json" assert {type: 'json'};
 import boards from "./surfboard.json" assert {type: 'json'};
 
+import {maps} from "./maps-svg.js";
 
 
-
+//console.log(maps[0]);
 
 //Функция создания свайпера
 const relizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
@@ -83,7 +84,14 @@ function findActiveSlide(arr) {
   return active;
 }
 
-
+function addStyleDisplayForArr(arr,style) {
+  for (let j = 0; j < arr.length; j++) {
+    arr[j].style.display = style;
+  }
+}
+function addStyleDisplayForEl(el, style) {
+  el.style.display = style;
+}
 
 
 
@@ -127,25 +135,8 @@ setTimeout(() => {
     }, 500)
   }
 
-  //let svg1 = document.querySelector('.mapMB').contentWindow.document;
-  //let svg2 = document.querySelector('.mapSurf').contentWindow.document;
-
-  //svg1.addEventListener('wheel', scrolMainSlider1);
-  //svg2.addEventListener('wheel', scrolMainSlider2);
-
- 
-
-  //создаем масcив всех svg
-  //let svges = [svg1, svg2]
-
-  //Для листания свайпом
-  // svges.forEach(element => {
-  //   element.addEventListener('touchstart', handleTouchStart, false);  
-  //   element.addEventListener('touchmove', handleTouchMove, false);
-  // });
-
-  var xDown = null;                                                        
-  var yDown = null;                                                        
+  let xDown = null;                                                        
+  let yDown = null;                                                        
 
   function handleTouchStart(evt) {    
     xDown = evt.touches[0].clientX;                                      
@@ -178,7 +169,7 @@ setTimeout(() => {
     yDown = null;                                             
   };
 
-}, 500)
+}, 100)
 
 
 
@@ -186,30 +177,42 @@ setTimeout(() => {
 
 //----- main-block shore --------------------------
 
+let chosenShore;
+
 // Функция обновления данных main-block
 function newChose(n) {
 
   // Подгрузка данных для main-block:
   btsShores[n].classList.add('item-main-block_shosen');
   titleMainBlock.innerHTML = shores[n].title;
-  //mapMainBlock.innerHTML = `<object class="mapMB" type="image/svg+xml" data="img/main-block/maps/${shores[n].map}"></object>`;
   bgMainBlock.innerHTML = `<img src="img/main-block/bg/${shores[n].bg}" alt="">`
 
-  // Позиционирование карты:
-  // let map = document.getElementsByClassName('main-block__map')[0];
-  // let posMap = shores[n].positionMap;
-  // map.classList.remove("left");
-  // map.classList.remove("right");
-  // addClass(map, posMap);
+  mapBlock.innerHTML = maps[n];
+  let map = document.querySelector('.map-block__map');
+  if (n == 0) {
+    map.classList.remove('map1');
+    map.classList.remove('map2');
+    map.classList.add('map0');
+  }
+  if (n == 1) {
+    map.classList.remove('map0');
+    map.classList.remove('map2');
+    map.classList.add('map1');
+  }
+  if (n == 2) {
+    map.classList.remove('map1');
+    map.classList.remove('map0');
+    map.classList.add('map2');
+  }
 
-  // setTimeout(function() {
-  //   showLoc();
-  // }, 200);
+  updateMapDots();
 }
+
 
 setTimeout(function() {
   newChose(0);
-}, 200);
+  
+}, 0);
 
 let btsShores = document.querySelectorAll(".item-main-block");
 
@@ -217,8 +220,9 @@ let arrowDownLeft = document.querySelector('#arrow-down-left');
 let arrowDounRight = document.querySelector('#arrow-down-right');
 
 let titleMainBlock = document.querySelector('.main-block__title');
-let mapMainBlock = document.querySelector(".main-block__map");
+let mapBlock = document.querySelector(".map-block");
 let bgMainBlock = document.querySelector(".main-block__bg");
+
 
 for (let i = 0; i < btsShores.length; i++) {
   btsShores[i].addEventListener('click', function() {
@@ -253,82 +257,64 @@ arrowDounRight.addEventListener('click', function() {
 
 
 //----- main-block map ------------------------------------
-// let nCheckLoc = 2;
-// let arrLoc;
-// let arrName;
-// let arrBigLoc;
 
-// function showLoc() {
+let chosenDot;
 
-//   let svg = document.querySelector('.mapMB').contentWindow.document;
+let dotsMainBlockMap;
+let bigdotsMainBlockMap;
+let textMainBlockMap;
 
-//   arrLoc = [
-//     svg.querySelector('#loc1_1_'),
-//     svg.querySelector('#loc2_1_'),
-//     svg.querySelector('#loc3_1_'),
-//     svg.querySelector('#loc4_1_'),
-//   ]
-//   arrName = [
-//     svg.querySelector('#name1'),
-//     svg.querySelector('#name2'),
-//     svg.querySelector('#name3'),
-//     svg.querySelector('#name4'),
-//   ]
-//   arrBigLoc = [
-//     svg.querySelector('#bigloc1'),
-//     svg.querySelector('#bigloc2'),
-//     svg.querySelector('#bigloc3'),
-//     svg.querySelector('#bigloc4'),
-//   ]
+function updateContentMap(n) {
+  removeClass(bigdotsMainBlockMap, "db");
+  removeClass(textMainBlockMap, "db");
+  addClass(bigdotsMainBlockMap[n], "db");
+  addClass(textMainBlockMap[n], "db");
+  chosenDot = n;
+  console.log(n);
+}
 
-//   for (let i = 0; i < arrLoc.length; i++) {
-//     arrLoc[i].addEventListener('click', function() {
-//       removeClass(arrName, "db");
-//       removeClass(arrBigLoc, "db");
-//       arrName[i].classList.add('db');
-//       arrBigLoc[i].classList.add('db');
-//     })
-//   }
-// }
+function updateMapDots() {
+  dotsMainBlockMap = document.querySelectorAll('.svg-dot-main-block-map');
+  bigdotsMainBlockMap = document.querySelectorAll('.svg-bigdot-main-block-map');
+  textMainBlockMap = document.querySelectorAll('.svg-main-block-map-text');
+  
+  
+  for (let i = 0; i < dotsMainBlockMap.length; i++) {
+    dotsMainBlockMap[i].addEventListener('click', function() {
+      updateContentMap(i);
+      
+      console.log(chosenDot);
+    })
+  }
 
-// setTimeout(function() {
-// showLoc();
-// }, 10);
+  chosenDot = containsClass(bigdotsMainBlockMap, "db");
+}
 
-// let arrowUpLeft = document.querySelector('#arrow-up-left');
-// let arrowUpRight = document.querySelector('#arrow-up-right');
 
-// arrowUpLeft.addEventListener('click', function() {
+let arrowUpLeft = document.querySelector('#arrow-up-left');
+let arrowUpRight = document.querySelector('#arrow-up-right');
 
-//   let chosen = containsClass(arrName, "db");
-//   removeClass(arrName, "db");
-//   removeClass(arrBigLoc, "db");
+arrowUpLeft.addEventListener('click', function() {
+  if (chosenDot == bigdotsMainBlockMap.length - 1) {
+    chosenDot = 0;
+  } else {
+    chosenDot = chosenDot + 1;
+  }
+  updateContentMap(chosenDot);
+})
 
-//   if (chosen == 0) {
-//     chosen = btsShores.length;
-//   } else {
-//     chosen = chosen - 1;
-//   }
+arrowUpRight.addEventListener('click', function() {
+  if (chosenDot == 0) {
+    chosenDot = bigdotsMainBlockMap.length - 1;
+  } else {
+    chosenDot = chosenDot - 1;
+  }
+  updateContentMap(chosenDot);
+})
 
-//   addClass(arrName[chosen], "db");
-//   addClass(arrBigLoc[chosen], "db");
-// })
 
-// arrowUpRight.addEventListener('click', function() {
 
-//   let chosen = containsClass(arrName, "db");
-//   removeClass(arrName, "db");
-//   removeClass(arrBigLoc, "db");
 
-//   if (chosen == btsShores.length) {
-//     chosen = 0;
-//   } else {
-//     chosen = chosen + 1;
-//   }
-
-//   addClass(arrName[chosen], "db");
-//   addClass(arrBigLoc[chosen], "db");
-// })
 
 
 
