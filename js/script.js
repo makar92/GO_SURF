@@ -3,8 +3,8 @@ import beaches from "./surf_beaches.json" assert {type: 'json'};
 import airlines from "./airlines.json" assert {type: 'json'};
 import boards from "./surfboard.json" assert {type: 'json'};
 
-import {maps} from "./maps-svg.js";
-
+import {mapsMainBlock} from "./maps-svg.js";
+import {mapsSurf} from "./maps-surf.js";
 
 //console.log(maps[0]);
 
@@ -72,6 +72,13 @@ function removeClass(arr, cl) {
 function addClass(el, cl) {
   el.classList.add(cl);
 }
+
+
+function changeElementClass(el, arr, cl) {
+  removeClass(arr, cl);
+  addClass(el, cl);
+}
+
 
 // Функция поиска активного класса (блок wrapper)
 function findActiveSlide(arr) {
@@ -187,7 +194,7 @@ function newChose(n) {
   titleMainBlock.innerHTML = shores[n].title;
   bgMainBlock.innerHTML = `<img src="img/main-block/bg/${shores[n].bg}" alt="">`
 
-  mapBlock.innerHTML = maps[n];
+  mapBlock.innerHTML = mapsMainBlock[n];
   let map = document.querySelector('.map-block__map');
   if (n == 0) {
     map.classList.remove('map1');
@@ -284,8 +291,6 @@ function updateMapDots() {
   for (let i = 0; i < dotsMainBlockMap.length; i++) {
     dotsMainBlockMap[i].addEventListener('click', function() {
       updateContentMap(i);
-      
-      console.log(chosenDot);
     })
   }
 
@@ -322,125 +327,111 @@ arrowUpRight.addEventListener('click', function() {
 
 //---- surf map -----------------------------------------
 
-// let mapSufData = document.querySelector('.surf__map');
-// let mapSurf;
-// let arrDot;
-// let arrDotHover;
-// let arrDotActive;
-// let arrMobWindow;
-// let arrCoordinats;
-// let coordinats = document.querySelector('.surf__coordinats');
 
-// //медиазапрос изменения карты
-// changeMap();
-// matchMedia('(max-width: 767px)').addListener(function() {
-//   changeMap();
-//   setTimeout(function() {
-//     updateSurfMap();
-//   }, 200);
-// });
+//let surfChangeDot;
 
-// //Функция изменения карты
-// function changeMap() {
-//   if (window.matchMedia('(min-width: 767px)').matches) {
-//     mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDots.svg"></object>';
-//   } else {
-//     mapSufData.innerHTML = '<object class="mapSurf" type="image/svg+xml" data="img/surf/WorldMapDotsmobile.svg"></object>';
-//   }
-// }
+let surfMapBlock = document.querySelector('.surf__map-block');
 
-// function updateSurfMap() {
-//   mapSurf = document.querySelector('.mapSurf').contentWindow.document;
+//surfMapBlock.innerHTML = mapsSurf[0];
 
-//   arrDot = [
-//     mapSurf.querySelector('#oval0'),
-//     mapSurf.querySelector('#oval1'),
-//     mapSurf.querySelector('#oval2'),
-//     mapSurf.querySelector('#oval3'),
-//     mapSurf.querySelector('#oval4'),
-//     mapSurf.querySelector('#oval5'),
-//     mapSurf.querySelector('#oval6'),
-//     mapSurf.querySelector('#oval7'),
-//   ]
 
-//   arrDotHover = [
-//     mapSurf.querySelector('#ovalHover0'),
-//     mapSurf.querySelector('#ovalHover1'),
-//     mapSurf.querySelector('#ovalHover2'),
-//     mapSurf.querySelector('#ovalHover3'),
-//     mapSurf.querySelector('#ovalHover4'),
-//     mapSurf.querySelector('#ovalHover5'),
-//     mapSurf.querySelector('#ovalHover6'),
-//     mapSurf.querySelector('#ovalHover7'),
-//   ]
+const addSurfMap = (breakpoint, parentBlock, map0, map1) => {
   
-//   arrDotActive = [
-//     mapSurf.querySelector('#ovalActiv0'),
-//     mapSurf.querySelector('#ovalActiv1'),
-//     mapSurf.querySelector('#ovalActiv2'),
-//     mapSurf.querySelector('#ovalActiv3'),
-//     mapSurf.querySelector('#ovalActiv4'),
-//     mapSurf.querySelector('#ovalActiv5'),
-//     mapSurf.querySelector('#ovalActiv6'),
-//     mapSurf.querySelector('#ovalActiv7'),
-//   ]
-  
-//   arrMobWindow = [
-//     mapSurf.querySelector('#window0'),
-//     mapSurf.querySelector('#window1'),
-//     mapSurf.querySelector('#window2'),
-//     mapSurf.querySelector('#window3'),
-//     mapSurf.querySelector('#window4'),
-//     mapSurf.querySelector('#window5'),
-//     mapSurf.querySelector('#window6'),
-//     mapSurf.querySelector('#window7'),
-//   ]
+  breakpoint = window.matchMedia(breakpoint);
 
-//   arrCoordinats = [
-//     beaches[0].coordinat,
-//     beaches[1].coordinat,
-//     beaches[2].coordinat,
-//     beaches[3].coordinat,
-//     beaches[4].coordinat,
-//     beaches[5].coordinat,
-//     beaches[6].coordinat,
-//     beaches[7].coordinat,
-//   ]
-  
-//   //hover for dots
-//   for (let i = 0; i < arrDot.length; i++) {
-//     arrDot[i].addEventListener('mouseenter', function() {
-//       arrDotHover[i].classList.add('db');
-//     })
-//   }
-//   for (let i = 0; i < arrDot.length; i++) {
-//     arrDot[i].addEventListener('mouseleave', function() {
-//       arrDotHover[i].classList.remove('db');
-//     })
-//   }
+  const changeMap = function(showMap) {
+    if (breakpoint.matches) {
+      parentBlock.innerHTML = map0;
+      
+    } else {
+      parentBlock.innerHTML = map1;
+    }
 
-//   //active for dos
-//   for (let i = 0; i < arrDot.length; i++) {
-//     arrDot[i].addEventListener('click', function() {
-//       removeClass(arrDotActive, 'db');
-//       removeClass(arrMobWindow, 'db');
-//       arrDotActive[i].classList.add('db');
-//       arrMobWindow[i].classList.add('db');
-//       coordinats.innerHTML = arrCoordinats[i];
-//     })
-//   }
+  }
 
-//   //reset active window
-//   mapSurf.querySelector('#reset_1_').addEventListener('click', function() {
-//     removeClass(arrDotActive, 'db');
-//     removeClass(arrMobWindow, 'db');
-//     coordinats.innerHTML = "";
-//   })
-// }
+  breakpoint.addEventListener('change', changeMap);
+
+  changeMap();
+
   
-// setTimeout(function() {
-//   updateSurfMap();
-// }, 200);
+  
+  
+}
+
+addSurfMap("(min-width: 767px)", surfMapBlock, mapsSurf[0], mapsSurf[1]);
+
+let surfDots = document.querySelectorAll('.surfDot');
+let surfMobileWindows = document.querySelectorAll('.surMobWindow');
+let surfActiveDots = document.querySelectorAll('.oval-active');
+
+
+//let surfCircule = document.querySelectorAll(".surf-circule");
+//console.log(surfCircule);
+// let surfHoverDots = document.querySelectorAll('');
+
+function addListenerForSurfDots() {
+  for (let i = 0; i < surfDots.length; i++) {
+    surfDots[i].addEventListener('click', function() {
+      changeElementClass(surfActiveDots[i], surfActiveDots, "db");
+      changeElementClass(surfMobileWindows[i], surfMobileWindows, "db");
+      //surfChangeDot = i;
+  
+  
+  
+  
+      setTimeout(() => {
+        window.addEventListener('click', function (event) {
+  
+          if (
+            (event.target == surfDots[0]) ||
+            (event.target == surfDots[1]) ||
+            (event.target == surfDots[2]) ||
+            (event.target == surfDots[3]) ||
+            (event.target == surfDots[4]) ||
+            (event.target == surfDots[5]) ||
+            (event.target == surfDots[6]) ||
+            (event.target == surfDots[7]) ) {
+          } else {
+            removeClass(surfMobileWindows, "db");
+            removeClass(surfActiveDots, "db")
+          }
+  
+  
+          
+  
+        }, { once: true })
+      }, 100)
+  
+  
+  
+    })
+  
+  }
+}
+
+
+addListenerForSurfDots();
+
+
+//Слушатель изменения экрана для переназначения слушателей карты
+window.matchMedia("(min-width: 767px)").addEventListener('change', function() {
+  
+  surfDots = document.querySelectorAll('.surfDot');
+  surfMobileWindows = document.querySelectorAll('.surMobWindow');
+  surfActiveDots = document.querySelectorAll('.oval-active');
+
+  setTimeout(() => {
+    addListenerForSurfDots();
+  }, 300)
+
+});
+
+
+
+
+
+
+
 
 
 

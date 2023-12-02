@@ -1,4 +1,4 @@
-export let maps = [
+export let mapsMainBlock = [
   `<div class="map-block__map">
   <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 1001 496" style="enable-background:new 0 0 1001 496;" xml:space="preserve">
@@ -59,7 +59,7 @@ viewBox="0 0 1001 496" style="enable-background:new 0 0 1001 496;" xml:space="pr
 .st2{fill:#FFFFFF;fill-opacity:0;}
 .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#4AF6CD;}
 .st4{display:none;fill:#FFFFFF;enable-background:new    ;}
-.st5{font-family:'ArialMT';}
+.st5{font-family:'Fira Sans';}
 .st6{font-size:21px;}
 .db {display: block;}
 </style>
@@ -119,7 +119,7 @@ viewBox="0 0 1001 496" style="enable-background:new 0 0 1001 496;" xml:space="pr
 .st2{fill:#FFFFFF;fill-opacity:0;}
 .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#4AF6CD;}
 .st4{display:none;fill:#FFFFFF;enable-background:new    ;}
-.st5{font-family:'ArialMT';}
+.st5{font-family:'Fira Sans';}
 .st6{font-size:21px;}
 .db {display: block;}
 #loc1_1_:hover {fill:#f64af6;}
