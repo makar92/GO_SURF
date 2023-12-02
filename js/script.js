@@ -193,16 +193,19 @@ function newChose(n) {
     map.classList.remove('map1');
     map.classList.remove('map2');
     map.classList.add('map0');
+    bgMainBlock.classList.remove('positionBg1')
   }
   if (n == 1) {
     map.classList.remove('map0');
     map.classList.remove('map2');
     map.classList.add('map1');
+    bgMainBlock.classList.add('positionBg1')
   }
   if (n == 2) {
     map.classList.remove('map1');
     map.classList.remove('map0');
     map.classList.add('map2');
+    bgMainBlock.classList.remove('positionBg1')
   }
 
   updateMapDots();
@@ -270,7 +273,6 @@ function updateContentMap(n) {
   addClass(bigdotsMainBlockMap[n], "db");
   addClass(textMainBlockMap[n], "db");
   chosenDot = n;
-  console.log(n);
 }
 
 function updateMapDots() {

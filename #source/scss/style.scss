@@ -249,26 +249,30 @@ body{
   z-index: 20;
   position: relative;
   
-  & img {
-    padding: 10px;
-    width: 44px;
-    height: 40px;
-  }
+  // & img {
+  //   padding: 10px;
+  //   width: 44px;
+  //   height: 40px;
+  // }
   &__arrow {
-    padding: 10px;
+    
     width: 60px;
     font-size: 50px;
     font-weight: 800;
     line-height: 65%;
     overflow: hidden;
     position: relative;
-    left: 30px;
+    &:nth-child(1) {
+      padding: 10px 10px 10px 0px;
+    }
     &:nth-child(2) {
       transform: rotateY(180deg);
+      padding: 10px 10px 10px 0px;
     }
     @media (max-width: 768px) or (max-height: 900px) {
       width: 30px;
       font-size: 30px;
+      
     }
   } 
 }
@@ -486,9 +490,13 @@ body{
   justify-content: space-between;
   flex-direction: column;
   align-items: end;
+  @media (max-width: 1024px) {
+    padding: 30px 30px 20px 30px;
+  }
   @media (max-width: 768px) {
     padding: 20px 30px 20px 30px;
   }
+
   &__arrows-up {
     //display: none;
     justify-content: end;
@@ -659,8 +667,6 @@ body{
   justify-content: flex-end;
 }
 
-
-
 .map-block {
   position: absolute;
   top: 0;left: 0;
@@ -816,6 +822,11 @@ body{
   }
 }
 
+.positionBg1 {
+  & img {
+    object-position: right;
+  }
+}
 
 //----- surf -----------
 
@@ -1105,17 +1116,10 @@ body{
   }
   &__arrows-up {
     justify-content: end;
-    right: 30px;
-    @media (max-width: 768px) {
-      right: 20px;
-    }
   }
   &__arrows-down {
     justify-content: start;
-    right: 30px;
-    @media (max-width: 768px) {
-      right: 40px;
-    }
+
   }
   &__bg {
     position: absolute;
