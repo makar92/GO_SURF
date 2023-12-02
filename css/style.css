@@ -402,7 +402,7 @@ body a {
   top: 0;
   left: 0;
   width: 170px;
-  height: 100vh;
+  height: 100dvh;
   border-right: 1px solid rgba(255, 255, 255, 0.2515);
   display: flex;
   justify-content: space-between;
@@ -615,7 +615,7 @@ body a {
 }
 
 .main-block {
-  height: 100vh;
+  height: 100dvh;
   text-align: right;
   padding: 40px 80px 30px 209px;
   display: flex;
@@ -720,7 +720,7 @@ body a {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 }
 .main-block__bg img {
   width: 100%;
@@ -732,7 +732,7 @@ body a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   z-index: -1;
   background: radial-gradient(62.09% 62.09% at 42.87% 49.23%, rgba(34, 34, 34, 0.43) 0%, #0F0F0F 100%);
 }
@@ -817,7 +817,7 @@ body a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 50dvh;
   z-index: 1000;
 }
 @media (max-width: 768px) {
@@ -919,30 +919,30 @@ body a {
 
 .surf {
   position: relative;
-  padding: 10vh 76px 10vh 79px;
+  padding: 10dvh 76px 10dvh 79px;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 }
 @media (max-width: 1024px) {
   .surf {
-    padding: 8vh 26px 8vh 26px;
+    padding: 8dvh 26px 8dvh 26px;
   }
 }
 @media (max-width: 767px) {
   .surf {
-    padding: 6vh 16px 6vh 16px;
+    padding: 6dvh 16px 6dvh 16px;
   }
 }
 .surf__title-block {
-  margin: 0px 0px 13vh 150px;
+  margin: 0px 0px 13dvh 150px;
 }
 @media (max-width: 767px) {
   .surf__title-block {
-    margin: 0px 0px 13vh 50px;
+    margin: 0px 0px 13dvh 50px;
   }
 }
 .surf__body {
-  height: 61vh;
+  height: 61dvh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -955,7 +955,7 @@ body a {
 }
 @media (max-width: 767px) {
   .surf__body {
-    height: 70vh;
+    height: 70dvh;
   }
 }
 .surf__subtitle-block {
@@ -1050,14 +1050,14 @@ body a {
 
 .slider {
   width: 100%;
-  height: 100vh;
-  padding: 10vh 0px 10vh;
+  height: 100dvh;
+  padding: 10dvh 0px 10dvh;
   position: relative;
 }
 .slider__container {
   width: 100%;
   height: 100%;
-  padding: 10vh 0px 0px 0px;
+  padding: 10dvh 0px 0px 0px;
 }
 .slider__arrows {
   width: 100px;
@@ -1065,7 +1065,7 @@ body a {
   justify-content: end;
   position: absolute;
   right: 4%;
-  top: 6vh;
+  top: 6dvh;
 }
 .slider__cards {
   width: 100%;
@@ -1156,7 +1156,7 @@ body a {
 
 .up-slide {
   position: relative;
-  top: -5vh;
+  top: -5dvh;
 }
 
 .slider-active-slide {
@@ -1165,49 +1165,49 @@ body a {
 }
 
 .info-block {
-  padding: 5vh 0px 5vh 0px;
+  padding: 5dvh 0px 5dvh 0px;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 1vh;
+  row-gap: 1dvh;
 }
 @media (max-width: 768px) or (max-height: 900px) {
   .info-block {
-    padding: 3vh 0px 3vh 0px;
+    padding: 3dvh 0px 3dvh 0px;
   }
 }
 .info-block__title-block {
-  margin: 0px 0px 0Vh 294px;
+  margin: 0px 0px 0dvh 294px;
   z-index: 10;
 }
 @media (max-width: 768px) {
   .info-block__title-block {
-    margin: 0px 10px 0Vh 10px;
+    margin: 0px 10px 0dvh 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 .info-block__body {
-  height: 40vh;
+  height: 40dvh;
   position: relative;
-  padding: 5vh 84px 0px 135px;
+  padding: 5dvh 84px 0px 135px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
   .info-block__body {
-    height: 50vh;
-    padding: 5vh 20px 40px 20px;
+    height: 50dvh;
+    padding: 5dvh 20px 40px 20px;
   }
 }
 @media (max-width: 400px) {
   .info-block__body {
-    height: 30vh;
+    height: 30dvh;
   }
 }
 .info-block__subtitle-block_up {
@@ -1530,8 +1530,8 @@ body a {
 }
 
 .shop {
-  padding: 5vh 0px 1vh 0px;
-  height: 100vh;
+  padding: 5dvh 0px 1dvh 0px;
+  height: 100dvh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -1539,19 +1539,19 @@ body a {
 }
 @media (max-width: 1280px) {
   .shop {
-    padding: 2vh 0px 1vh 0px;
+    padding: 2dvh 0px 1dvh 0px;
   }
 }
 .shop__title-block {
-  margin: 0px 0px 0vh 294px;
+  margin: 0px 0px 0dvh 294px;
 }
 @media (max-width: 1280px) {
   .shop__title-block {
-    margin: 0px 0px 0vh 50px;
+    margin: 0px 0px 0dvh 50px;
   }
 }
 .shop__body {
-  padding: 10vh 0px 10vh 0px;
+  padding: 10dvh 0px 10dvh 0px;
   min-height: 65%;
   display: flex;
   justify-content: space-between;

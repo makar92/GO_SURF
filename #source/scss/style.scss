@@ -281,7 +281,7 @@ body{
   position: absolute;
   top: 0;left: 0;
   width: 170px;
-  height: 100vh;
+  height: 100dvh;
   border-right: 1px solid rgba(255, 255, 255, 0.2515);
   display: flex;
   justify-content: space-between;
@@ -479,7 +479,7 @@ body{
 //----- main-block ----------
 
 .main-block {
-  height: 100vh;
+  height: 100dvh;
   text-align: right;
   padding: 40px 80px 30px 209px;
   display: flex;
@@ -576,7 +576,7 @@ body{
     top: 0;left: 0;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     & img {
       width: 100%;
       height: 100%;
@@ -587,7 +587,7 @@ body{
     position: absolute;
     top: 0;left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     z-index: -1;
     background: radial-gradient(62.09% 62.09% at 42.87% 49.23%, rgba(34, 34, 34, 0.43) 0%, #0F0F0F 100%);
   }
@@ -665,7 +665,7 @@ body{
   position: absolute;
   top: 0;left: 0;
   width: 100%;
-  height: 50vh;
+  height: 50dvh;
   z-index: 1000;
   @media (max-width: 768px) {
     display: none;
@@ -821,23 +821,23 @@ body{
 
 .surf {
   position: relative;
-  padding: 10vh 76px 10vh 79px;
+  padding: 10dvh 76px 10dvh 79px;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   @media (max-width: 1024px) {
-    padding: 8vh 26px 8vh 26px;  
+    padding: 8dvh 26px 8dvh 26px;  
   }
   @media (max-width: 767px) {
-    padding: 6vh 16px 6vh 16px;  
+    padding: 6dvh 16px 6dvh 16px;  
   }
   &__title-block {
-    margin: 0px 0px 13vh 150px;
+    margin: 0px 0px 13dvh 150px;
     @media (max-width: 767px) {
-      margin: 0px 0px 13vh 50px;
+      margin: 0px 0px 13dvh 50px;
     }
   }
   &__body {
-    height: 61vh;
+    height: 61dvh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -846,7 +846,7 @@ body{
       flex-direction: column;
     }
     @media (max-width: 767px) {
-      height: 70vh;
+      height: 70dvh;
     }
   }
   &__subtitle-block {
@@ -934,13 +934,13 @@ body{
 
 .slider {
   width: 100%;
-  height: 100vh;
-  padding: 10vh 0px 10vh;
+  height: 100dvh;
+  padding: 10dvh 0px 10dvh;
   position: relative;
   &__container {
     width: 100%;
     height: 100%;
-    padding: 10vh 0px 0px 0px;
+    padding: 10dvh 0px 0px 0px;
   }
   &__arrows {
     width: 100px;
@@ -948,7 +948,7 @@ body{
     justify-content: end;
     position: absolute;
     right: 4%;
-    top: 6vh;
+    top: 6dvh;
   }
   &__cards {
    width: 100%;
@@ -1044,7 +1044,7 @@ body{
 }
 .up-slide {
   position: relative;
-  top: -5vh;
+  top: -5dvh;
 }
 .slider-active-slide {
   opacity: 65%;
@@ -1056,40 +1056,40 @@ body{
 //----- info-block -----------
 
 .info-block {
-  padding: 5vh 0px 5vh 0px;
+  padding: 5dvh 0px 5dvh 0px;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 1vh;
+  row-gap: 1dvh;
   @media (max-width: 768px) or (max-height: 900px) {
-    padding: 3vh 0px 3vh 0px;
+    padding: 3dvh 0px 3dvh 0px;
   }
   &__title-block {
-    margin: 0px 0px 0Vh 294px;
+    margin: 0px 0px 0dvh 294px;
     z-index: 10;
     @media (max-width: 768px) {
-      margin: 0px 10px 0Vh 10px;
+      margin: 0px 10px 0dvh 10px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
   &__body {
-    height: 40vh;
+    height: 40dvh;
     position: relative;
-    padding: 5vh 84px 0px 135px;
+    padding: 5dvh 84px 0px 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @media (max-width: 768px) {
-      height: 50vh;
-      padding: 5vh 20px 40px 20px;
+      height: 50dvh;
+      padding: 5dvh 20px 40px 20px;
     }
     @media (max-width: 400px) {
-      height: 30vh;
+      height: 30dvh;
     }
   }
   &__body-up {}
@@ -1367,23 +1367,23 @@ body{
 //------ shop ----------
 
 .shop {
-  padding: 5vh 0px 1vh 0px;
-  height: 100vh;
+  padding: 5dvh 0px 1dvh 0px;
+  height: 100dvh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
   @media (max-width: 1280px) {
-    padding: 2vh 0px 1vh 0px;
+    padding: 2dvh 0px 1dvh 0px;
   }
   &__title-block {
-    margin: 0px 0px 0vh 294px;
+    margin: 0px 0px 0dvh 294px;
     @media (max-width: 1280px) {
-      margin: 0px 0px 0vh 50px;
+      margin: 0px 0px 0dvh 50px;
     }
   }
   &__body {
-    padding: 10vh 0px 10vh 0px;
+    padding: 10dvh 0px 10dvh 0px;
     min-height: 65%;
     display: flex;
     justify-content: space-between;
