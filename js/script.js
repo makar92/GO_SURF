@@ -328,12 +328,7 @@ arrowUpRight.addEventListener('click', function() {
 //---- surf map -----------------------------------------
 
 
-//let surfChangeDot;
-
 let surfMapBlock = document.querySelector('.surf__map-block');
-
-//surfMapBlock.innerHTML = mapsSurf[0];
-
 
 const addSurfMap = (breakpoint, parentBlock, map0, map1) => {
   
@@ -352,10 +347,6 @@ const addSurfMap = (breakpoint, parentBlock, map0, map1) => {
   breakpoint.addEventListener('change', changeMap);
 
   changeMap();
-
-  
-  
-  
 }
 
 addSurfMap("(min-width: 767px)", surfMapBlock, mapsSurf[0], mapsSurf[1]);
@@ -365,19 +356,15 @@ let surfMobileWindows = document.querySelectorAll('.surMobWindow');
 let surfActiveDots = document.querySelectorAll('.oval-active');
 
 
-//let surfCircule = document.querySelectorAll(".surf-circule");
-//console.log(surfCircule);
-// let surfHoverDots = document.querySelectorAll('');
 
 function addListenerForSurfDots() {
+
   for (let i = 0; i < surfDots.length; i++) {
+
     surfDots[i].addEventListener('click', function() {
+
       changeElementClass(surfActiveDots[i], surfActiveDots, "db");
       changeElementClass(surfMobileWindows[i], surfMobileWindows, "db");
-      //surfChangeDot = i;
-  
-  
-  
   
       setTimeout(() => {
         window.addEventListener('click', function (event) {
@@ -395,17 +382,12 @@ function addListenerForSurfDots() {
             removeClass(surfMobileWindows, "db");
             removeClass(surfActiveDots, "db")
           }
-  
-  
-          
-  
+
         }, { once: true })
+
       }, 100)
-  
-  
-  
+
     })
-  
   }
 }
 
@@ -427,8 +409,17 @@ window.matchMedia("(min-width: 767px)").addEventListener('change', function() {
 });
 
 
+//Ховеры для точек на карте
+let surfDotsHover = document.querySelectorAll(".oval-hover");
 
-
+for (let i = 0; i < surfDots.length; i++) {
+  surfDots[i].addEventListener('mouseover', function() {
+    surfDotsHover[i].classList.add("db");
+  })
+  surfDots[i].addEventListener('mouseout', function() {
+    surfDotsHover[i].classList.remove("db");
+  })
+}
 
 
 
@@ -835,26 +826,26 @@ for (let i = 0; i < Object.keys(boards).length; i++) {
 		<div class="center-block__board">
 			<img src="img/forBD/SURFBOARD/${boards[i].img}" alt="">
       <div class="center-block__add-info add-info add-info_1">
-      <div class="add-info__bt">
-        <img src="img/shop/plus.svg" alt="">
+        <div class="add-info__bt">
+          <img src="img/shop/plus.svg" alt="">
+        </div>
+        <div class="add-info__line "></div>
+        <div class="add-info__info ">${boards[i].material}</div>
       </div>
-      <div class="add-info__line hide"></div>
-      <div class="add-info__info hide">${boards[i].material}</div>
-    </div>
-    <div class="center-block__add-info add-info add-info_2">
-      <div class="add-info__info hide">${boards[i].strengthening}</div>
-      <div class="add-info__line hide"></div>
-      <div class="add-info__bt">
-        <img src="img/shop/plus.svg" alt=""></img>
+      <div class="center-block__add-info add-info add-info_2">
+        <div class="add-info__bt">
+          <img src="img/shop/plus.svg" alt="">
+        </div>
+        <div class="add-info__line "></div>
+        <div class="add-info__info ">${boards[i].strengthening}</div>
       </div>
-    </div>
-    <div class="center-block__add-info add-info add-info_3">
-      <div class="add-info__info hide">${boards[i].fins}</div>
-      <div class="add-info__line hide"></div>
-      <div class="add-info__bt">
-        <img src="img/shop/plus.svg" alt="">
+      <div class="center-block__add-info add-info add-info_3">
+        <div class="add-info__bt">
+          <img src="img/shop/plus.svg" alt="">
+        </div>
+        <div class="add-info__line "></div>
+        <div class="add-info__info ">${boards[i].fins}</div>
       </div>
-    </div>
 		</div>
 	</div>
   `
@@ -917,22 +908,42 @@ let bt = document.querySelectorAll('.add-info__bt');
 let ln = document.querySelectorAll('.add-info__line');
 let info = document.querySelectorAll('.add-info__info');
 
-for (let i = 0; i <bt.length; i++) {
-  bt[i].addEventListener('mouseenter', function(event) {
-    bt[i].innerHTML = `<img src="img/shop/minus.svg" alt="">`
-    ln[i].classList.remove('hide');
-    info[i].classList.remove('hide');
-    ln[i].classList.add('show');
-    info[i].classList.add('show');
-  })
-  bt[i].addEventListener('mouseleave', function(event) {
-    bt[i].innerHTML = `<img src="img/shop/plus.svg" alt="">`
-    ln[i].classList.remove('show');
-    info[i].classList.remove('show');
-    ln[i].classList.add('hide');
-    info[i].classList.add('hide');
-  })
+
+function addActiveShore() {
+
+  for (let i = 0; i < bt.length; i++) {
+
+    function addOpasity100() {
+
+      event.stopPropagation();
+      ln[i].style.opacity = "100%";
+      info[i].style.opacity = "100%";
+    }
+    
+    bt[i].addEventListener('click', addOpasity100)
+
+    function addOpasity0() {
+      for (let i = 0; i < bt.length; i++) {
+        ln[i].style.opacity = "0%";
+        info[i].style.opacity = "0%";
+      }
+    }
+    
+    window.addEventListener('click', addOpasity0)
+    
+  }
 }
+
+addActiveShore()
+
+
+
+
+
+
+
+
+
 
 
 
@@ -968,37 +979,6 @@ let btShopToMain = document.querySelector('.footer__two-words');
 btShopToMain.addEventListener('click', function() {
   mainSwiper.slideTo(0, 1500);
 })
-
-//Кнопки карты
-// let arrBTS;
-
-// function addLisenerForBTofMWofMap() {
-//   mapSurf = document.querySelector('.mapSurf').contentWindow.document;
-
-//   arrBTS = [
-//     mapSurf.querySelector('#arow_1_'),
-//     mapSurf.querySelector('#arow_12_'),
-//     mapSurf.querySelector('#arow_2_'),
-//     mapSurf.querySelector('#arow_4_'),
-//     mapSurf.querySelector('#arow_9_'),
-//     mapSurf.querySelector('#arow_6_'),
-//     mapSurf.querySelector('#arow_5_'),
-//     mapSurf.querySelector('#arow_3_'),
-//   ]
-
-//   for (let i = 0; i < Object.keys(arrBTS).length; i++) {
-//     arrBTS[i].addEventListener('click', function() {
-//       changeInfoTravel(i)
-//       mainSwiper.slideTo(3, 600);
-//     })
-//   }
-// }
-  
-// setTimeout(function() {
-//   addLisenerForBTofMWofMap();
-// }, 300);
-
-
 
 //Кнопки карточек на слайдере
 

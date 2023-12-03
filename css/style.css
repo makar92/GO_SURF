@@ -1051,9 +1051,11 @@ body a {
 }
 .slider__slide .two-words {
   z-index: -1;
+  opacity: 30%;
 }
 .slider__slide_active .two-words {
   z-index: 100;
+  opacity: 100%;
 }
 .card {
   position: relative;
@@ -1700,6 +1702,7 @@ body a {
   }
 }
 .add-info_2 {
+  flex-direction: row-reverse;
   top: 60%;
   right: 50%;
   justify-content: end;
@@ -1711,6 +1714,7 @@ body a {
   }
 }
 .add-info_3 {
+  flex-direction: row-reverse;
   top: 85%;
   right: 50%;
   justify-content: end;
@@ -1747,6 +1751,8 @@ body a {
   width: 80px;
   height: 1px;
   background: #ffffff;
+  opacity: 0%;
+  transition: opacity 0.3s ease 0s;
 }
 @media (max-width: 768px) {
   .add-info__line {
@@ -1762,6 +1768,8 @@ body a {
   margin: 24px;
   font-size: 24px;
   font-weight: 800;
+  opacity: 0%;
+  transition: opacity 0.3s ease 0s;
 }
 @media (max-width: 768px) {
   .add-info__info {
